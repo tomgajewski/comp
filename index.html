@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
 
-    <link rel="stylesheet" href="_styles/styles.css">    
-    <link rel="stylesheet" href="_styles/jquery.bxslider.css">    
-    
+    <link rel="stylesheet" href="_styles/default.css">
+    <link rel="stylesheet" href="_styles/home.css">
+    <link rel="stylesheet" href="_styles/jquery.bxslider.css">
     <script src="_scripts/modernizr-2.6.2.min.js"></script>
-    
+
     <!--[if lt IE 9]>
       <script src="_scripts/respond.min.js"></script>
     <![endif]-->
@@ -27,17 +27,18 @@
 
   </head>
   <body>
+    <!-- <img src="../01_home.jpg"/> -->
     <div id="page">
       <div id="header">
         <div class="container clearfix">
           <div id="logo">
-            <a href="#"><img src="_new_images/logo.jpg" alt="COMP" /></a>
+            <a href="#"><img src="_images/logo.jpg" alt="COMP" /></a>
           </div>
           
           <div id="header-right">
             <div id="top-nav">
               <ul>
-                <li class="active"><a href="#">Members Sign-in</a></li>
+                <li class="on"><a href="#">Members Sign-in</a></li>
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Français</a></li>
               </ul>
@@ -59,7 +60,8 @@
           
           <a href="#" id="menu-toggle">Menu</a>
         </div>
-      </div><!-- end header -->
+      <!-- end:header -->
+      </div>
       
       <div id="navigation-row">
         <div class="container">
@@ -76,7 +78,8 @@
             </ul>
           </div>
         </div>
-      </div><!-- end navigation-row -->
+        <!-- end:navigation-row -->
+      </div>
       
       <div id="page-content">
         <div class="container">
@@ -84,23 +87,23 @@
             <div id="slideshow">
               <div class="slider">
                 <div class="slide clearfix">
-                  <div class="slide-image"><img src="_new_images/slide1.jpg" alt="" /></div>
+                  <div class="slide-image"><img src="_images/slide1.jpg" alt="" /></div>
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
-                    <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
+                    <p><strong>Vivamus Pousere Condimetu:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
                     <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
-                  <div class="slide-image"><img src="_new_images/slide2.jpg" alt="" /></div>
+                  <div class="slide-image"><img src="_images/slide2.jpg" alt="" /></div>
                   <div class="slide-text">
                     <h1>Lorem Ipsum Dolor</h1>
-                    <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
+                    <p><strong>Aliquam Eratum Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
                     <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
-                  <div class="slide-image"><img src="_new_images/slide1.jpg" alt="" /></div>
+                  <div class="slide-image"><img src="_images/slide1.jpg" alt="" /></div>
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
@@ -108,7 +111,7 @@
                   </div>
                 </div>
                 <div class="slide clearfix">
-                  <div class="slide-image"><img src="_new_images/slide1.jpg" alt="" /></div>
+                  <div class="slide-image"><img src="_images/slide1.jpg" alt="" /></div>
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
@@ -116,7 +119,7 @@
                   </div>
                 </div>
                 <div class="slide clearfix">
-                  <div class="slide-image"><img src="_new_images/slide1.jpg" alt="" /></div>
+                  <div class="slide-image"><img src="_images/slide1.jpg" alt="" /></div>
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
@@ -124,27 +127,28 @@
                   </div>
                 </div>
               </div>
-            </div><!-- end slideshow -->
+            <!-- end:slideshow -->
+            </div>
           
             <div id="dates-box" class="grey-box">
               <div class="box-content">
                 <h2 class="icon-arrow">Important<br/>Dates</h2>
 
-                <div class="dates-title">
-                  <a href="#"><strong>Deadline for Submissions:</strong></a><br/>
-                  <a href="#">21 June 2014</a>
+                <div class="dates-main">
+                  <a href="#">Deadline for Submissions:</a><br/>
+                  21 June 2014
                 </div>
 
                 <div class="dates-text">
-                  <strong>Examination Time:</strong><br/>
+                 <span>Examination Time:</span><br/>
                   23 June 2014
                 </div>
                 <div class="dates-text">
-                  <strong>Another Important Date:</strong><br/>
+                  <span>Another Important Date:</span><br/>
                   25 June 2014
                 </div>
-                <div class="dates-text">
-                  <strong>Examination Time:</strong><br/>
+                <div class="dates-text last">
+                  <span>Examination Time:</span><br/>
                   27 June 2014
                 </div>
 
@@ -152,7 +156,8 @@
                 <a href="#" class="bullet-link">View All Events</a>
               </div>
             </div>
-          </div><!-- end home-top -->
+          <!-- end:home-top -->
+          </div>
           
           <div class="home-bottom">
             <div class="columns-row clearfix">
@@ -161,10 +166,10 @@
                   
                   <div class="box-content">
                     <h2 class="icon-arrow">Membership <br/>&amp Services</h2>
-                    <div class="box-image"><img src="_new_images/image-membership-services.jpg" alt="" /></div>
+                    <div class="box-image"><img src="_images/image-membership-services.jpg" alt="" /></div>
                     <p>Lorem ipsum dolor sit ameconetuit duis ac felis astrciendum adipiscnc cing elit. Nam metus null filla intus sollidin nec odio. Quisquut tmattisi dorci urinterdum iporta vel, portact duis ac felis astrciendum adipiscnc nisi. Suspendisse fermt risus adui...</p>
                     
-                    <a href="#"><strong>Benefits</strong></a> | <a href="#"><strong>Become a Member</strong></a>
+                    <a href="#"><strong>Benefits</strong></a> <span class="divider">|</span> <a href="#"><strong>Become a Member</strong></a>
                   </div>
                 </div>
               </div>
@@ -174,10 +179,10 @@
                   
                   <div class="box-content">
                     <h2 class="icon-arrow">Certification</h2>
-                    <div class="box-image"><img src="_new_images/image-certification.jpg" alt="" /></div>
+                    <div class="box-image"><img src="_images/image-certification.jpg" alt="" /></div>
                     <p>Lorem ipsum dolor sit ameconetuit duis ac felis astrciendum adipiscnc cing elit. Nam metus null filla intus sollidin nec odio. Quisquut tmattisi dorci urinterdum iporta vel, portact duis ac felis astrciendum adipiscnc nisi. Suspendisse fermt risus adui...</p>
                     
-                    <a href="#"><strong>Eligibility </strong></a> | <a href="#"><strong>Schedule & Fees</strong></a>
+                    <a href="#"><strong>Eligibility</strong></a> <span class="divider">|</span> <a href="#"><strong>Schedule & Fees</strong></a>
                   </div>
                 </div>
               </div>
@@ -187,10 +192,10 @@
                   
                   <div class="box-content">
                     <h2 class="icon-arrow">Recertification</h2>
-                    <div class="box-image"><img src="_new_images/image-recertification.jpg" alt="" /></div>
+                    <div class="box-image"><img src="_images/image-recertification.jpg" alt="" /></div>
                     <p>Lorem ipsum dolor sit ameconetuit duis ac felis astrciendum adipiscnc cing elit. Nam metus null filla intus sollidin nec odio. Quisquut tmattisi dorci urinterdum iporta vel, portact duis ac felis astrciendum adipiscnc nisi. Suspendisse fermt risus adui...</p>
                     
-                    <a href="#"><strong>Requirements</strong></a> | <a href="#"><strong>Instructions</strong></a>
+                    <a href="#"><strong>Requirements</strong></a> <span class="divider">|</span> <a href="#"><strong>Instructions</strong></a>
                   </div>
                 </div>
               </div>
@@ -200,71 +205,70 @@
 
                   <div class="box-content">
                     <h2 class="icon-arrow">Fellowship Distinction</h2>
-                    <div class="box-image"><img src="_new_images/image-fellowship-distinction.jpg" alt="" /></div>
+                    <div class="box-image"><img src="_images/image-fellowship-distinction.jpg" alt="" /></div>
                     
                     <p>Lorem ipsum dolor sit ameconetuit duis ac felis astrciendum adipiscnc cing elit. Nam metus null filla intus sollidin nec odio. Quisquut tmattisi dorci urinterdum iporta vel, portact duis ac felis astrciendum adipiscnc nisi. Suspendisse fermt risus adui...</p>
                     
-                    <a href="#"><strong>Eligbility</strong></a> | <a href="#"><strong>Application Forms</strong></a>
+                    <a href="#"><strong>Eligbility</strong></a> <span class="divider">|</span> <a href="#"><strong>Application Forms</strong></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- end home-bottom -->
+          <!-- end:home-bottom -->
+          </div>
         </div>
-      </div><!-- end page-content -->
+      <!-- end:page-content -->
+      </div>
       
       <div id="footer">
         <div class="container">
           <div class="columns-row clearfix">
+
             <div class="column-1-4">
               <h3>Quick Links</h3>
-              
               <div class="footer-links">
                 <ul>
-                  <li><a href="#">Annual Scientific Meeting</a></li>
-                  <li><a href="#">Winter School</a></li>
-                  <li><a href="#">2015 World Congress</a></li>
-                  <li><a href="#">Events Calendar</a></li>
-                  <li><a href="#">Lorem Ipsumatom</a></li>
+                  <li><a href="#">Announcements</a></li>
+                  <li><a href="#">Exams Schedule</a></li>
+                  <li><a href="#">List Of Fees</a></li>
+                  <li><a href="#">Frequently Asked Questions</a></li>
                 </ul>
               </div>
             </div>
-            
-           
-            
+
             <div class="column-1-2">
               <h3>Contact Us</h3>
-              
               <div class="footer-links">
                 <ul>
-                  <li><a href="#">Annual Scientific Meeting</a></li>
-                  <li><a href="#">Winter School</a></li>
-                  <li><a href="#">2015 World Congress</a></li>
-                  <li><a href="#">Events Calendar</a></li>
-                  <li><a href="#">Lorem Ipsumatom</a></li>
+                  <li><span>CCPM Office</span></li>
+                  <li>P.O. Box 72024, Kanata North RPO, Kanata, ON, K2K 2P4, Canada</li>
+                  <li><span>Email: <a href="#">admin@medphys.ca</a></span></li>
+                  <li><span>Telephone:</span> 613.599.3491 <span class="divider">|</span>  <span>Fax:</span> 613.435.7257</li>
                 </ul>
               </div>
             </div>
             
             <div class="column-1-4">
               <h3>Our Partners</h3>
-              
               <div class="footer-logo">
-                <a href="#"><img src="_new_images/footer-logo.png" alt="" /></a>
+                <a href="#"><img src="_images/footer-logo.png" alt="" /></a>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- end footer -->
+      <!-- end:footer -->
+      </div>
       
       <div id="copyright-row">
         <div class="container">
           Copyright &copy; 2014<br/>
-          The Canadian Organization of Medical Physicists<br/>
+          Canadian College of Physicists in Medicine (CCPM)<br/>
           All Rights Reserved.
         </div>
-      </div><!-- end copyright-row -->
-    </div><!-- end page -->
+      <!-- end:copyright-row -->
+      </div>
+    <!-- end:page -->
+    </div>
     
     <script src="_scripts/jquery-1.10.2.min.js"></script>
     <script src="_scripts/jquery.bxslider.min.js"></script>
