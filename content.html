@@ -9,33 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
 
-    <link rel="stylesheet" href="_styles/styles.css">    
-    <link rel="stylesheet" href="_styles/jquery.bxslider.css">    
-    
+    <link rel="stylesheet" href="_styles/default.css">
+    <link rel="stylesheet" href="_styles/content.css">
+    <link rel="stylesheet" href="_styles/jquery.bxslider.css">
     <script src="_scripts/modernizr-2.6.2.min.js"></script>
-    
+
     <!--[if lt IE 9]>
       <script src="_scripts/respond.min.js"></script>
     <![endif]-->
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
   </head>
   <body>
+
+    <!-- <img src="../02_content.jpg"/> -->
     <div id="page">
       <div id="header">
         <div class="container clearfix">
           <div id="logo">
-            <a href="#"><img src="_images/logo.png" alt="COMP" /></a>
+            <a href="#"><img src="_images/logo.jpg" alt="COMP" /></a>
           </div>
           
           <div id="header-right">
             <div id="top-nav">
               <ul>
-                <li class="active"><a href="#">Members Sign-in</a></li>
+                <li class="on"><a href="#">Members Sign-in</a></li>
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Français</a></li>
               </ul>
             </div>
             
-            <div id="social-links">
+           <!--  <div id="social-links">
               <a href="#" class="icon-twitter">Twitter</a>
               <a href="#" class="icon-facebook">Facebook</a>
               <a href="#" class="icon-linkedin">LinkedIn</a>
@@ -46,37 +56,40 @@
               <div class="tweet-content">
                 This is the latest <strong><a href="#">#Tweet</a></strong> which will be displayed here and more to follow and sooner rather than later...
               </div>
-            </div>
+            </div> -->
           </div>
           
           <a href="#" id="menu-toggle">Menu</a>
         </div>
-      </div><!-- end header -->
+      <!-- end:header -->
+      </div>
       
       <div id="navigation-row">
         <div class="container">
           <div id="navigation">
             <ul>
-              <li class="active"><a href="#">About <br/>COMP</a></li>
-              <li><a href="#">Membership <br/>&amp; Services</a></li>
-              <li><a href="#">Conferences <br/>&amp; Events</a></li>
-              <li><a href="#">Publications</a></li>
-              <li><a href="#">Community <br/>&amp; Partnerships</a></li>
-              <li><a href="#">Career <br/>&amp; Education</a></li>
-              <li><a href="#">News <br/>&amp; Media</a></li>
+              <li class="on"><a href="#">About <br/>COMP</a></li>
+              <li><a href="#">Registry of<br/> Medical Physicists</a></li>
+              <li><a href="#">Certification</a></li>
+              <li><a href="#">Fellowship<br/>Distinction</a></li>
+              <li><a href="#">Recertification</a></li>
+              <li><a href="#">Mammography<br />Certification</a></li>
+              <li><a href="#">H.E. Johns <br />Award</a></li>
+               <li><a href="#">Bylaws, Regulations<br />&amp; Statements</a></li>
             </ul>
           </div>
         </div>
-      </div><!-- end navigation-row -->
+        <!-- end:navigation-row -->
+      </div>
       
-      <div id="page-content">
+       <div id="page-content">
         <div class="container clearfix">
           <div id="content-column">
             <h1>Heading One, The Biggest</h1>
             
             <div class="caption-row clearfix">
               <div class="caption-image">
-                <img src="_images/caption-image.jpg" alt="" /><br/>
+                <img src="_images/content-image.jpg" alt="" /><br/>
                 Phototcapture is here, if available and place reserved for this visual treatment.
               </div>
               <div class="caption-text">
@@ -109,7 +122,7 @@
             <div class="sidebar-box">
               <div class="sidebar-menu">
                 <ul>
-                  <li class="active"><a href="#">What is Medical Physics</a></li>
+                  <li class="on"><a href="#">About Certification</a></li>
                   <li><a href="#">Quisque Utmattis Ipsum</a></li>
                   <li><a href="#">Praesent Felis Semanticum</a></li>
                   <li><a href="#">Vivamus Posuere Condime</a></li>
@@ -119,90 +132,94 @@
               </div>
             </div>
             
-            <div class="blue-box">
-              <div class="career-image"><img src="_images/image-career.jpg" alt="" /></div>
+            <div id="dates-box" class="grey-box">
               <div class="box-content">
-                <h2 class="icon-globe">Career<br/>Centre</h2>
+                <h2 class="icon-arrow">Important<br/>Dates</h2>
 
-                <div class="career-title">
-                  <a href="#"><strong>Director, Physical Sciences, Peter MacCallum Cancer Centre,</strong></a><br/>
-                  <a href="#">Melbourne, Australia</a>
+                <div class="dates-main">
+                  <a href="#">Deadline for Submissions:</a><br/>
+                  21 June 2014
                 </div>
 
-                <div class="career-text">
-                  <strong>Medical Physicists, Sunnybrook Health Sciences Centre,</strong><br/>
-                  Toronto, Ontario
+                <div class="dates-text">
+                 <span>Examination Time:</span><br/>
+                  23 June 2014
                 </div>
-
-                <a href="#" class="bullet-link">View All Opportunities</a>
+                <div class="dates-text">
+                  <span>Another Important Date:</span><br/>
+                  25 June 2014
+                </div>
+                <div class="dates-text last">
+                  <span>Examination Time:</span><br/>
+                  27 June 2014
+                </div>
+                <a href="#" class="bullet-link">View All Events</a>
               </div>
             </div>
-          </div><!-- end sidebar -->
+
+          <!-- end:sidebar -->
+          </div>
         </div>
-      </div><!-- end page-content -->
+      <!-- end:page-content -->
+      </div>
+
       
-      <div id="footer">
+     <div id="footer">
         <div class="container">
           <div class="columns-row clearfix">
+
             <div class="column-1-4">
               <h3>Quick Links</h3>
-              
               <div class="footer-links">
                 <ul>
-                  <li><a href="#">Annual Scientific Meeting</a></li>
-                  <li><a href="#">Winter School</a></li>
-                  <li><a href="#">2015 World Congress</a></li>
-                  <li><a href="#">Events Calendar</a></li>
-                  <li><a href="#">Lorem Ipsumatom</a></li>
+                  <li><a href="#">Announcements</a></li>
+                  <li><a href="#">Exams Schedule</a></li>
+                  <li><a href="#">List Of Fees</a></li>
+                  <li><a href="#">Frequently Asked Questions</a></li>
                 </ul>
               </div>
             </div>
-            
-            <div class="column-1-4">
-              <h3>Student Resources</h3>
-              
-              <div class="footer-links">
-                <ul>
-                  <li><a href="#">Lorem Ipsum Dolorsit</a></li>
-                  <li><a href="#">Consectetur Adipiscing</a></li>
-                  <li><a href="#">Namumetus Nullafringi</a></li>
-                  <li><a href="#">Mollis Eusollicitudin</a></li>
-                  <li><a href="#">Apertura Solicitum</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="column-1-4">
-              <h3>Our Sponsors</h3>
-              
-              <div class="footer-logo">
-                <a href="#"><img src="_images/footer-logo1.png" alt="" /></a>
-              </div>
-              
-              <div class="footer-logo">
-                <a href="#"><img src="_images/footer-logo2.png" alt="" /></a>
-              </div>
-            </div>
-            
-            <div class="column-1-4">
+
+            <div class="column-1-4 show-mobile"> <!-- this is duplicated few lines below as on mobile, it's got different order ... -->
               <h3>Our Partners</h3>
-              
               <div class="footer-logo">
-                <a href="#"><img src="_images/footer-logo3.png" alt="" /></a>
+                <a href="#"><img src="_images/footer-logo.png" alt="" /></a>
+              </div>
+            </div>
+
+            <div class="column-1-2">
+              <h3>Contact Us</h3>
+              <div class="footer-links">
+                <ul>
+                  <li><span>CCPM Office</span></li>
+                  <li>P.O. Box 72024, Kanata North RPO, Kanata, ON, K2K 2P4, Canada</li>
+                  <li><span>Email: <a href="#">admin@medphys.ca</a></span></li>
+                  <li><span>Telephone:</span> 613.599.3491 <span class="divider">|</span>  <span>Fax:</span> 613.435.7257</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="column-1-4  hide-mobile"> <!-- this is duplicated few lines above as on mobile, it's got different order ... -->
+              <h3>Our Partners</h3>
+              <div class="footer-logo">
+                <a href="#"><img src="_images/footer-logo.png" alt="" /></a>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- end footer -->
+      <!-- end:footer -->
+      </div>
       
       <div id="copyright-row">
         <div class="container">
           Copyright &copy; 2014<br/>
-          The Canadian Organization of Medical Physicists<br/>
+          Canadian College of Physicists in Medicine (CCPM)<br/>
           All Rights Reserved.
         </div>
-      </div><!-- end copyright-row -->
-    </div><!-- end page -->
+      <!-- end:copyright-row -->
+      </div>
+    <!-- end:page -->
+    </div>
     
     <script src="_scripts/jquery-1.10.2.min.js"></script>
     <script src="_scripts/jquery.bxslider.min.js"></script>

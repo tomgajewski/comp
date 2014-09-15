@@ -1,0 +1,61 @@
+@media only screen and (min-width: 841px) {
+
+  #dates-box {
+    
+    width: 24.29%;
+    float: right;
+    min-height: 396px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+
+
+/* Setting things up */
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+#page {
+  padding: 1em;
+  background: #fafafa;
+}
+
+#content {
+  clear: both;
+  padding-top: 1em;
+}
+
+nav a {
+  color: #fff;
+}
+
+/* Important stuff */
+
+ul.menu {
+  padding: 0;
+  width: 100%;
+  
+  li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    background: #777;
+    margin: 0;
+    padding: .5em 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Fixes Firefox bug */
+    box-sizing: border-box;
+    width: 20%;
+    text-align: center;
+    
+    &:hover {
+      background: #888;
+    }
+  }
+}
