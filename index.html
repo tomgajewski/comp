@@ -3,32 +3,34 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <title>The Canadian Organization of Medical Physicists</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
+<head>
+  <meta charset="utf-8">
+  <title>The Canadian Organization of Medical Physicists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
 
-    <link rel="stylesheet" href="_styles/default.css">
-    <link rel="stylesheet" href="_styles/home.css">
-    <link rel="stylesheet" href="_styles/jquery.bxslider.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="js/jquery.slides.min.js"></script>
+  <link rel="stylesheet" href="_styles/default.css">
+  <link rel="stylesheet" href="_styles/home.css">
+  <link rel="stylesheet" href="_styles/offcanvas-nav.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="_scripts/jquery.slides.js"></script>
 
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+  <![endif]-->
+</head>
+<body>
 
-    <!--[if lt IE 9]>
-      <script src="_scripts/respond.min.js"></script>
-    <![endif]-->
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .gradient {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
+  <div class="offcanvas-navigation"></div>
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
 
-  </head>
-  <body>
+  <div class="site-wrap">
+
     <!-- <img src="../01_home.jpg"/> -->
     <div id="page">
       <div id="header">
@@ -94,7 +96,7 @@
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Vivamus Pousere Condimetu:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
-                    <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
+                    <p class="hide-mobile"><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
@@ -102,7 +104,7 @@
                   <div class="slide-text">
                     <h1>Lorem Ipsum Dolor</h1>
                     <p><strong>Aliquam Eratum Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
-                    <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
+                    <p class="hide-mobile"><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
@@ -110,7 +112,7 @@
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
-                    <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
+                    <p class="hide-mobile"><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
@@ -118,7 +120,7 @@
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
-                    <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
+                    <p class="hide-mobile"><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <div class="slide clearfix">
@@ -126,7 +128,7 @@
                   <div class="slide-text">
                     <h1>About Our Organization</h1>
                     <p><strong>Our Vision Statement:</strong><br/>The recognized leader and primary resource for medical physics in Canada.</p>
-                    <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
+                    <p class="hide-mobile"><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
                 <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
@@ -284,19 +286,58 @@
       </div>
     <!-- end:page -->
     </div>
+  <!-- end:site-wrap -->
+  </div>
+
   <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
   <script>
     $(function() {
+      $("#nav-trigger").click(function() {
+        $(".offcanvas-navigation").html('');
+        $(".offcanvas-navigation").append('<ul></ul>');
+        $(".offcanvas-navigation ul").html($("#navigation ul").html().replace('<br>',''));
+        $(".offcanvas-navigation ul li").addClass("nav-item");
+      })
 
-      var slider_width = $("#slideshow").width();
-      var slider_height = $("#dates-box").height(); //350; //$(".home-top").height();
-  console.log(slider_width);
+// $( window ).resize(function() {
+//   var width = $( window ).width();
+//   if(width < 650)
+//   {
+//     console.log(width);
+  
+//     $(".slidesjs-container, .slidesjs-control").css('height', '400px');
+//   }
 
-    console.log(slider_height);
+// });
+
+//       var slider_width = $("#slideshow").width();
+      // var slider_height = $("#dates-box").height(); //350; //$(".home-top").height();
+
     
+
+    var width = $( window ).width();
+    if(width < 650)
+    {
+      var slider_height = 0;
+      slider_height += parseInt($(".slide-image").height());
+
+
+
       $('#slides').slidesjs({
-       
+        width: 400,
+        height: slider_height,
       });
+      // $(".slidesjs-container, .slidesjs-control").css('height', '400px');
+    }
+    else
+    {
+      $('#slides').slidesjs({
+         width:400,
+         height:200,
+      });
+    }
+
+
     });
   </script>
   <!-- End SlidesJS Required -->

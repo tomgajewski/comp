@@ -3,31 +3,37 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <title>The Canadian Organization of Medical Physicists</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
+<head>
+  <meta charset="utf-8">
+  <title>The Canadian Organization of Medical Physicists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="_images/favicon.ico" />
 
-    <link rel="stylesheet" href="_styles/default.css">
-    <link rel="stylesheet" href="_styles/content.css">
-    <link rel="stylesheet" href="_styles/jquery.bxslider.css">
-    <script src="_scripts/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="_styles/default.css">
+  <link rel="stylesheet" href="_styles/content.css">
+  <link rel="stylesheet" href="_styles/offcanvas-nav.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script src="_scripts/jquery.slides.js"></script>
 
-    <!--[if lt IE 9]>
-      <script src="_scripts/respond.min.js"></script>
-    <![endif]-->
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .gradient {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="_scripts/respond.min.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+  <![endif]-->
 
-  </head>
-  <body>
+</head>
+<body>
 
+  <div class="offcanvas-navigation"></div>
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
     <!-- <img src="../02_content.jpg"/> -->
     <div id="page">
       <div id="header">
@@ -219,6 +225,8 @@
       </div>
     <!-- end:page -->
     </div>
+  <!-- end:site-wrap -->
+  </div>
     
     <script src="_scripts/jquery-1.10.2.min.js"></script>
     <script src="_scripts/jquery.bxslider.min.js"></script>

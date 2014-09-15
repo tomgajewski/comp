@@ -714,6 +714,7 @@ span.divider {
   font-size: 12px;
   line-height: 14px;
   color: #404040;
+  padding:5px;
 }
 
 .caption-row .caption-image img {
@@ -809,7 +810,8 @@ span.divider {
   #logo {
     padding: 20px 170px 20px 20px;
     text-align: center;
-    max-width: 100%;
+    max-width: none;
+    margin-left:40px;
   }
   
   .page-members #logo {
@@ -837,6 +839,7 @@ span.divider {
   #top-nav li a {
     display: block;
     text-align: right;
+    font-size:12px;
   }
   
   #top-nav li a:before {
@@ -908,13 +911,35 @@ span.divider {
     display: none;
   }
 
+  #slides .slidesjs-previous , #slides .slidesjs-next {
+    margin-right: 5px;
+    position: absolute;
+    top: 80px;
+    outline: 0;
+    width: 40px;
+    height: 80px;
+    text-indent: -9999px;
+    z-index: 9999;
+  }
+
+  #slides .slidesjs-previous {
+    left: 30px;
+    background: url(../_images/slider-arrows.png) no-repeat left top;
+  }
+  #slides .slidesjs-next {
+    right: 30px;
+    background: url(../_images/slider-arrows.png) no-repeat right bottom;
+  }
+
+
+
   #slides .slide-text {
-    margin-top:-330px;
-    position: relative;
-    top: auto;
+    margin-top:240px;
+    position: absolute;
+    top: 0px;
     bottom: auto;
     right: auto;
-    width: auto;
+    width: 100%;
    
    background-image: url('../_images/mobile-slider-text-bg.png');
 
@@ -986,12 +1011,30 @@ span.divider {
   }
 }
 
+
+@media only screen and (max-width: 650px) {
+  #slides .slide-text {
+    margin-top:220px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #slides .slide-text {
+    margin-top:210px;
+  }
+}
+
+
+
 @media only screen and (max-width: 480px) {
   .column-1-4 {
     float: none;
     width: auto;
     max-width: 320px;
     margin: 0 auto 20px;
+  }
+  #footer .column-1-4 {
+    max-width: 100%;
   }
 }
 
@@ -1007,16 +1050,6 @@ span.divider {
 
 #slides .slidesjs-navigation {
   margin-top:3px;
-}
-
-#slides .slidesjs-previous {
-  margin-right: 5px;
-  float: left;
-}
-
-#slides .slidesjs-next {
-  margin-right: 5px;
-  float: left;
 }
 
 .slidesjs-pagination {
