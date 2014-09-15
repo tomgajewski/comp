@@ -112,12 +112,13 @@
 
 .bx-wrapper .bx-prev {
 	left: 20px;
-	background: url(../_images/slider-arrows.png) no-repeat left center;
+	background: url(../_images/slider-arrows.png) no-repeat left top;
+
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(../_images/slider-arrows.png) no-repeat right center;
+	background: url(../_images/slider-arrows.png) no-repeat right bottom;
 }
 
 .bx-wrapper .bx-controls-direction a {

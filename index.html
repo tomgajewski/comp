@@ -12,21 +12,9 @@
     <link rel="stylesheet" href="_styles/default.css">
     <link rel="stylesheet" href="_styles/home.css">
     <link rel="stylesheet" href="_styles/jquery.bxslider.css">
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-    $(".open-panel").click(function(){
-  
-  $("html").addClass("openNav");
-  
-});
-  
-$(".close-panel, #content").click(function(){
-  
-$("html").removeClass("openNav");
-  
-});
-    </script>
-    <script src="_scripts/modernizr-2.6.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="js/jquery.slides.min.js"></script>
+
 
     <!--[if lt IE 9]>
       <script src="_scripts/respond.min.js"></script>
@@ -73,7 +61,6 @@ $("html").removeClass("openNav");
             </div> -->
           </div>
           
-          <a href="#" id="menu-toggle">Menu</a>
         </div>
       <!-- end:header -->
       </div>
@@ -99,8 +86,9 @@ $("html").removeClass("openNav");
       <div id="page-content">
         <div class="container">
           <div class="home-top clearfix">
+             
             <div id="slideshow">
-              <div class="slider">
+              <div id="slides">
                 <div class="slide clearfix">
                   <div class="slide-image"><img src="_images/slide1.jpg" alt="" /></div>
                   <div class="slide-text">
@@ -141,19 +129,19 @@ $("html").removeClass("openNav");
                     <p><strong>Our Mission Statement:</strong><br/>To champion medical physicists' efforts for patient care excellence through education, knowledge transfer, advocacy and partnerships.</p>
                   </div>
                 </div>
+                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
               </div>
-            <!-- end:slideshow -->
+            <!-- end: slideshow -->
             </div>
-          
+
             <div id="dates-box" class="grey-box">
               <div class="box-content clearfix">
                 <h2 class="icon-arrow">Important<br/>Dates</h2>
-
                 <div class="dates-main">
                   <a href="#">Deadline for Submissions:</a><br/>
                   21 June 2014
                 </div>
-
                 <div class="dates-text">
                  <span>Examination Time:</span><br/>
                   23 June 2014
@@ -166,8 +154,6 @@ $("html").removeClass("openNav");
                   <span>Examination Time:</span><br/>
                   27 June 2014
                 </div>
-
-
                 <a href="#" class="bullet-link">View All Events</a>
               </div>
             </div>
@@ -298,9 +284,21 @@ $("html").removeClass("openNav");
       </div>
     <!-- end:page -->
     </div>
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+
+      var slider_width = $("#slideshow").width();
+      var slider_height = $("#dates-box").height(); //350; //$(".home-top").height();
+  console.log(slider_width);
+
+    console.log(slider_height);
     
-    <script src="_scripts/jquery-1.10.2.min.js"></script>
-    <script src="_scripts/jquery.bxslider.min.js"></script>
-    <script src="_scripts/main.js"></script>
+      $('#slides').slidesjs({
+       
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
   </body>
 </html>

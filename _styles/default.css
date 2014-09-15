@@ -126,7 +126,6 @@ span.divider {
 }
 
 #header > .container {
-  background: url("../_images/white-overlay.png") repeat-x left top;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -389,32 +388,32 @@ span.divider {
   margin-bottom: 15px;
 }
 
-.slider {
+#slides {
   overflow: hidden;
 }
 
-.slider .slide {
+#slides .slide {
   position: relative;
 }
 
-.slider .slide-image {
+#slides .slide-image {
   margin-right: 270px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.slider .slide-image img {
+#slides .slide-image img {
    -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
-.slider .slide-text {
+#slides .slide-text {
   position: absolute;
   top: 10px;
   right: 0;
   width: 250px;
-  bottom: 50px;
+  bottom: 0px;
   overflow: hidden;
 }
 
@@ -734,18 +733,6 @@ span.divider {
   text-decoration: underline;
 }
 
-#menu-toggle {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 0;
-  text-decoration: none;
-  cursor: pointer;
-  background: url("../_images/icon-menu.png") no-repeat center;
-  display: none;
-}
 
 .show-mobile {
   display:none;
@@ -775,6 +762,10 @@ span.divider {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  #slideshow  .slidesjs-pagination {
+    right:330px;
+  }
 }
 
 @media only screen and (max-width: 976px) {
@@ -784,16 +775,19 @@ span.divider {
     padding-right: 8px;
     font-size:14px;
   }
+
+  #slideshow  .slidesjs-pagination {
+    right:310px;
+  }
+
+
 }
 
 @media only screen and (min-width: 841px) {
   #navigation {
     display: block !important;
   }
-  
-  .bx-wrapper .bx-controls-direction a {
-    display: none;
-  }
+ 
 
 }
 
@@ -903,15 +897,19 @@ span.divider {
     margin-right: auto;
   }
   
-  .slider .slide-image {
+  #slides .slide-image {
     margin: 0 0 5px;
   }
-  .slider .slide-image img {
+  #slides .slide-image img {
     width:100%;
   }
   
-  .slider .slide-text {
-    margin-top:-100px;
+  #slideshow .slidesjs-pagination {
+    display: none;
+  }
+
+  #slides .slide-text {
+    margin-top:-330px;
     position: relative;
     top: auto;
     bottom: auto;
@@ -998,12 +996,70 @@ span.divider {
 }
 
 
-/* overwriting jquery.bxslider.css */
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.on {
-  background: #56c7f2 !important;
-}
-.bx-wrapper .bx-pager.bx-default-pager a {
-  background-color: #D9D9D9 !important;
+
+
+
+/* Start: slidejs */;
+
+#slides {
+  display: none
 }
 
-/* endof jquery.bxslider.css overwriting
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  position: absolute;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  z-index:99;
+  right:350px;
+  top:350px;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+  list-style: none;
+}
+
+.slidesjs-pagination li a {
+  text-decoration: none;
+  background: #D9D9D9;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 3px;
+  outline: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #FFF
+}
+
+#slides a:hover,
+#slides a:active {
+  background-color: #56c7f2;
+}
+
+/* End: slidejs */
