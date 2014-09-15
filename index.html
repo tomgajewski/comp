@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="_styles/default.css">
     <link rel="stylesheet" href="_styles/home.css">
     <link rel="stylesheet" href="_styles/jquery.bxslider.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+    $(".open-panel").click(function(){
+  
+  $("html").addClass("openNav");
+  
+});
+  
+$(".close-panel, #content").click(function(){
+  
+$("html").removeClass("openNav");
+  
+});
+    </script>
     <script src="_scripts/modernizr-2.6.2.min.js"></script>
 
     <!--[if lt IE 9]>
@@ -64,8 +78,25 @@
       <!-- end:header -->
       </div>
       
+              <a href="#" class="open-panel"><i class="icon-reorder icon-2x">SSS</i></a>
+
+<nav>
+  <a href="#" class="close-panel"><i class="icon-remove-sign icon-large">SSS</i></a>
+  <ul class="menu">
+    <li><a href="#">Menu Item</a></li>
+    <li><a href="#">Menu Item</a></li>
+    <li><a href="#">Menu Item</a></li>
+    <li><a href="#">Menu Item</a></li>
+    <li><a href="#">Menu Item</a></li>
+  </ul>
+</nav>
+
+
       <div id="navigation-row">
         <div class="container">
+
+
+
           <div id="navigation">
             <ul>
               <li class="on"><a href="#">About <br/>COMP</a></li>
