@@ -1,0 +1,158 @@
+
+
+#slideshow {
+  width: 74.75%;
+  float: left;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#slides {
+  overflow: hidden;
+}
+
+#slides .slide {
+  position: relative;
+}
+
+#slides .slide-image {
+  margin-right: 270px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+#slides .slide-image img {
+   -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#slides .slide-text {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 250px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+.slidesjs-pagination {
+  position: absolute;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  z-index:99;
+  right:350px;
+  top:350px;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+  list-style: none;
+}
+
+.slidesjs-pagination li a {
+  text-decoration: none;
+  background: #D9D9D9;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 3px;
+  outline: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #FFF
+}
+
+#slides a:hover,
+#slides a:active {
+  background-color: #56c7f2;
+}
+
+
+/* start:responsivity */
+
+@media only screen and (max-width: 840px) {
+
+  #slideshow {
+    width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #slides .slide-image {
+    margin: 0 0 5px;
+  }
+  #slides .slide-image img {
+    width:100%;
+  }
+  #slideshow .slidesjs-pagination {
+    display: none;
+  }
+
+  #slides .slidesjs-previous , #slides .slidesjs-next {
+    margin-right: 5px;
+    position: absolute;
+    top: 80px;
+    outline: 0;
+    width: 40px;
+    height: 80px;
+    text-indent: -9999px;
+    z-index: 9999;
+  }
+
+  #slides .slidesjs-previous {
+    left: 30px;
+    background: url(../_images/slider-arrows.png) no-repeat left top;
+  }
+  #slides .slidesjs-next {
+    right: 30px;
+    background: url(../_images/slider-arrows.png) no-repeat right bottom;
+  }
+
+  #slides .slide-text {
+    margin-top:240px;
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    background-image: url('../_images/mobile-slider-text-bg.png');
+    background-repeat: repeat-x;
+    padding: 15px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  #slides .slide-text {
+    margin-top:220px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #slides .slide-text {
+    margin-top:210px;
+  }
+}
+
