@@ -744,10 +744,14 @@ span.divider {
   }
   
   #logo {
-    padding: 20px 170px 20px 20px;
+    /*padding: 20px 170px 20px 20px;*/
     text-align: center;
     max-width: none;
-    margin-left:40px;
+    /*margin-left:40px;*/
+    float:left;
+    width:50%;
+    /*border:1px solid #000;*/
+    margin-left:15%;
   }
   
   .page-members #logo {
@@ -756,9 +760,11 @@ span.divider {
   }
   
   #header-right {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    /*top: 20px;*/
+    /*right: 20px;*/
+    float:right;
+    width:30%;
+    /*border:1px solid #000;*/
   }
   
   #social-links,
