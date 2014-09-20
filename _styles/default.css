@@ -467,6 +467,16 @@ span.divider {
   padding: 15px 10px 15px 15px;
 }
 
+/* divider vertical line for links */
+.blue-box .box-content a:nth-child(2n+0) {
+  border-right:2px solid #BFBFBF;
+  padding-right:5px;
+}
+.blue-box .box-content a:nth-child(2n+1) {
+  padding-left:5px;
+}
+
+
 .news-date {
   color: #808080;
 }
