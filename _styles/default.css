@@ -108,8 +108,9 @@ h3 {
 }
 
 span.divider {
-  color: #BFBFBF;
-  font-weight:normal;
+  border-left:2px solid #BFBFBF;
+  padding-left:5px;
+
 }
 
 .container {
