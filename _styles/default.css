@@ -469,14 +469,17 @@ span.divider {
 }
 
 /* divider vertical line for links */
-.blue-box .box-content a:nth-child(2n+0) {
-  border-right:2px solid #BFBFBF;
-  padding-right:5px;
+.blue-box ul {
+  margin:0px;
 }
-.blue-box .box-content a:nth-child(2n+1) {
-  padding-left:5px;
+.blue-box ul li {
+   display: inline;
+   border-right:2px solid #BFBFBF;
+   padding:0px 5px 0px 2px;
 }
-
+.blue-box ul li:last-child {
+  border-right:0px;
+}
 
 .news-date {
   color: #808080;
